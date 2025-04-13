@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: sans-serif;
-            background-color: #f4f4f4;
+            background-color: #2e3566;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -62,7 +62,7 @@
 
     <script>
         document.getElementById('callBackendBtn').addEventListener('click', () => {
-            fetch('http://localhost:5000/api/hello') // Backend ရဲ့ API Endpoint ကို ပြောင်းလဲနိုင်ပါတယ်။
+            fetch('http://localhost:5000/api/hello') 
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('message').textContent = data.message;
